@@ -26,6 +26,6 @@ await page.Locator(timeBoxSelector).DispatchEventAsync("click");
 await page.GetByRole(AriaRole.Button, new() { Name = "Complete booking" }).ClickAsync();
 
 await page.ScreenshotAsync(new PageScreenshotOptions { Path = "booking_result.png", FullPage = true });
-Console.WriteLine("�y�{���槹��");
+Console.WriteLine("booking done");
 
 await browser.CloseAsync();
